@@ -1,0 +1,12 @@
+.about-card{background:linear-gradient(180deg,#0f1724, #0b1020);border-radius:12px;padding:18px;margin:20px auto;color:#e6eef8;max-width:860px;box-shadow:0 12px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+.about-card h2{margin:0 0 6px;font-size:20px}
+.about-card .lead{margin:0 0 12px;color:rgba(230,238,248,0.75)}
+.about-text{font-size:15px;line-height:1.5;color:rgba(230,238,248,0.92);max-height:80px;overflow:hidden;transition:max-height .28s ease}
+.about-text.expanded{max-height:400px}
+.about-actions{display:flex;justify-content:flex-end;margin-top:12px}
+.toggle-btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:rgba(230,238,248,0.95);padding:8px 12px;border-radius:8px;cursor:pointer}
+.stats{display:flex;gap:12px;margin-top:16px;justify-content:center}
+.stat{background:rgba(255,255,255,0.02);padding:10px 14px;border-radius:10px;min-width:110px}
+.stat-value{font-weight:700;font-size:18px}
+.stat-label{font-size:12px;color:rgba(230,238,248,0.6);margin-top:6px}
+@media(max-width:720px){.stats{flex-direction:column;align-items:center}.about-card{margin:12px;padding:14px}}
