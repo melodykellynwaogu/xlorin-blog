@@ -1,37 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import './blog.css'
+import Hero from './components/Hero'
 import AboutXlorin from './components/AboutXlorin'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Hero />
+      <div className="container">
+        <article className="post">
+          <header className="post-header">
+            <h1 className="post-title">Introducing Xlorin: a cybersecurity chatbot</h1>
+            <div className="post-meta">By MelodyC • Oct 30, 2025 • Security</div>
+          </header>
+
+          <section className="post-body">
+            <p className="lead">Xlorin is a compact cybersecurity assistant built to help engineers triage vulnerabilities, summarize findings, and provide concise guidance.</p>
+            <p>Below is a short overview and dynamic snapshot of Xlorin's capabilities. Use the buttons and interactions to explore more.</p>
+
+            <AboutXlorin />
+
+            <h2>Why Xlorin?</h2>
+            <p>In today's fast-paced security landscape, engineers need quick, actionable insights. Xlorin is designed to streamline the process from detection to remediation with concise summaries and prioritized next steps.</p>
+          </section>
+        </article>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      
-      {/* About section for Xlorin */}
-      <AboutXlorin />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

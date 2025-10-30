@@ -1,0 +1,12 @@
+.hero{padding:40px 0;margin-bottom:20px;background:linear-gradient(180deg,#0b1020,transparent);border-radius:12px}
+.hero-inner{max-width:920px;margin:0 auto;padding:24px;color:#e6eef8}
+.hero-title{font-size:32px;margin:0 0 8px}
+.hero-sub{font-size:18px;color:rgba(230,238,248,0.85);min-height:28px}
+.caret{display:inline-block;margin-left:6px;opacity:0.9}
+.hero-meta{font-size:13px;color:rgba(230,238,248,0.6);margin-top:8px}
+
+/* micro-interactions */
+.hero .hero-title{transition:transform .22s ease, color .22s}
+.hero .hero-title:hover{transform:translateY(-2px);color:#6f7cff}
+
+@media(max-width:720px){.hero{padding:18px}.hero-title{font-size:24px}}

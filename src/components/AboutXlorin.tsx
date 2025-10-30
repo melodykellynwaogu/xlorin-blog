@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import './AboutXlorin.css'
 
 const statsSeed = [
-  { id: 'answers', label: 'Questions answered', value: 1243 },
+  { id: 'answers', label: 'Questions answered', value: 1443 },
   { id: 'topics', label: 'Topics trained', value: 87 },
-  { id: 'uptime', label: 'Uptime (hrs)', value: 432 }
+  { id: 'uptime', label: 'Uptime (hrs)', value: 492 }
 ]
 
 function useCountUp(target: number, start = 0, duration = 900) {
@@ -43,20 +43,21 @@ export default function AboutXlorin() {
     <section ref={nodeRef} className="about-card">
       <header>
         <h2>About Xlorin</h2>
-        <p className="lead">A nimble assistant trained to help with code, docs, and quick research.</p>
+        <p className="lead">A nimble cybersecurity assistant trained to help engineers triage vulnerabilities, summarize findings, and provide concise remediation guidance.</p>
       </header>
 
       <div className={`about-text ${expanded ? 'expanded' : ''}`}>
         <p>
-          Xlorin is designed to be compact, helpful, and developer-friendly. It blends
-          search, summarization and concise answers to help you move faster.
+          Xlorin is designed to be compact and security-focused. It blends fast
+          search, summarization, and concise remediation suggestions so you can
+          move from detection to action quickly.
         </p>
         {expanded && (
           <div>
             <p>
-              Under the hood it gathers context from local sessions and can surface
-              short summaries, links, and code examples. It prefers short, actionable
-              replies when the "brief" mode is enabled.
+              Under the hood Xlorin aggregates session context and can produce
+              short incident summaries, example patches, and prioritized next steps.
+              When brief mode is on, replies favor short, actionable advice.
             </p>
           </div>
         )}

@@ -1,0 +1,17 @@
+:root{--bg:#0b1020;--panel:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));--accent:#6f7cff}
+body{background:var(--bg);color:#e6eef8;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;margin:0}
+.container{max-width:900px;margin:20px auto;padding:0 16px}
+.post{background:transparent}
+.post-header{margin-bottom:18px}
+.post-title{font-size:28px;margin:6px 0}
+.post-meta{font-size:13px;color:rgba(230,238,248,0.6)}
+.post-body{background:var(--panel);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.post-body .lead{font-size:16px;color:rgba(230,238,248,0.95);margin-top:0}
+.read-the-docs{color:rgba(200,200,220,0.6);margin-top:18px}
+
+/* micro-interactions */
+.post-header .post-title{transition:color .18s ease, transform .18s}
+.post-header .post-title:hover{color:var(--accent);transform:translateY(-2px)}
+.post-body a{color:var(--accent);text-decoration:underline}
+
+@media(max-width:720px){.post-title{font-size:20px}.container{padding:0 12px;margin:12px auto}}
