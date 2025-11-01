@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import './AboutXlorin.css'
 
 const statsSeed = [
-  { id: 'answers', label: 'Questions answered', value: 1443 },
-  { id: 'topics', label: 'Topics trained', value: 87 },
-  { id: 'uptime', label: 'Uptime (hrs)', value: 492 }
+  { id: 'answers', label: 'Questions answered', value: 1497 },
+  { id: 'topics', label: 'Topics trained', value: 90 },
+  { id: 'uptime', label: 'Uptime (hrs)', value: 500 }
 ]
 
 function useCountUp(target: number, start = 0, duration = 900) {
