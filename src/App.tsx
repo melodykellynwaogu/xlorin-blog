@@ -13,7 +13,7 @@ function App() {
         <article className="post">
           <header className="post-header">
             <h1 className="post-title">Introducing Xlorin: a cybersecurity chatbot</h1>
-            <div className="post-meta">By MelodyC • Oct 30, 2025 • Security</div>
+            <div className="post-meta">By Xlorin Team • Oct 30, 2025 • Security</div>
           </header>
 
           <section className="post-body">
@@ -26,6 +26,15 @@ function App() {
             <p>In today's fast-paced security landscape, engineers need quick, actionable insights. Xlorin is designed to streamline the process from detection to remediation with concise summaries and prioritized next steps.</p>
           </section>
         </article>
+        <footer className="site-footer">
+          <div className="footer-links"><a href="/privacy">Privacy Policy</a>
+            <span> | </span><a href="/terms">Terms of Service</a><span> | </span>
+            <a href="mailto:support@xlorin.com">Contact</a>
+          </div>
+          <p className="footer-meta">
+            Powered by Xlorin AI | © {new Date().getFullYear()} Xlorin. All Rights Reserved.
+          </p>
+        </footer>
       </div>
     </>
   )

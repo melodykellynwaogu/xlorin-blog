@@ -7,6 +7,6 @@
 
 /* micro-interactions */
 .hero .hero-title{transition:transform .22s ease, color .22s}
-.hero .hero-title:hover{transform:translateY(-2px);color:#6f7cff}
+.hero .hero-title:hover{transform:translateY(-4px);color:#8393ff} /* Increased Y-shift and brighter blue */
 
 @media(max-width:720px){.hero{padding:18px}.hero-title{font-size:24px}}
