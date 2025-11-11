@@ -29,7 +29,7 @@ function App() {
         <footer className="site-footer">
           <div className="footer-links"><a href="/privacy">Privacy Policy</a>
             <span> | </span><a href="/terms">Terms of Service</a><span> | </span>
-            <a href="mailto:support@xlorin.com">Contact</a>
+            <a href="https://xlorin.vercel.app">Xlorin</a>
           </div>
           <p className="footer-meta">
             Powered by Xlorin AI | © {new Date().getFullYear()} Xlorin. All Rights Reserved.
